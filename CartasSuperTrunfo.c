@@ -1,7 +1,10 @@
+//CARTA 01 - FORTALEZA
+
 #include <stdio.h>
 
 int main() {
     // Variáveis Carta 01
+
     char estado01[40] = "CE";
     char codigo01[40] = "C1";
     char cidade01[40] = "FORTALEZA";
@@ -20,29 +23,8 @@ int main() {
   printf("PIB: %.3f Bilhões de Reais \n", pib01);
   printf("São %d pontos turísticos. \n", pontosTuristicos1);
 
-    printf("FORTALEZA\n");
-    printf("Carta nº1: \n");
-
-    printf("Insira o Código do Estado: ");
-    scanf("%s", &estado01);
-
-    printf("Insira o Código da Carta: ");
-    scanf("%s", &codigo01);
-
-    printf("Insira o nome da cidade: ");
-    scanf(" %s", &cidade01);
-
-    printf("Insira o Nº Populacional: ");
-    scanf("%d", &populacao01);
-
-    printf("Insira a Área da cidade: ");
-    scanf("%f", &area01);
-
-    printf("Insira o PIB: ");
-    scanf("%f", &pib01);
-
-    printf("Nº de Pontos Turísticos: ");
-    scanf("%d", &pontosTuristicos1);
+//CARTA 02 - MANAUS
+    //Variáveis carta 02
 
     char estado02[40] = "AM"; 
     char codigo02[40] = "C2";
@@ -61,27 +43,6 @@ int main() {
         printf("Área total: %.3f Km². \n", area02);
         printf("PIB: %.3f Bilhões de Reais \n", pib02);
         printf("São %d pontos turísticos. \n", pontosturisticos2);
-
-    printf("Insira o Código do Estado: ");
-    scanf(" %s", &estado02);
-
-    printf("Insira o Código da Carta: ");
-    scanf(" %s", &codigo02);
-
-    printf("Insira o nome da cidade: ");
-    scanf(" %s", &cidade02);
-
-    printf("Insira o Nº Populacional: ");
-    scanf("%d", &populacao02);
-
-    printf("Insira a Área total da cidade: ");
-    scanf("%f", &area02);
-
-    printf("Insira o PIB referente: ");
-    scanf("%f", &pib02);
-
-    printf("Nº de Pontos Turísticos: ");
-    scanf("%d", &pontosturisticos2);
 
     return 0;
 }
