@@ -52,38 +52,66 @@ int main() {
         printf("PIB PER Capita: %.3f PIB\n", pibPerCapita02);
         printf("Super Poder: %.3f\n", superPoder02);
 
+
     // Comparação das variáveis e exibição dos resultados
-    printf("\n______________#####______________\n");
-    printf("Comparação entre as cartas:\n");
 
-    printf("População: %s\n", (populacao01 > populacao02) ? "Batalha Vencida por C1" : "Batalha Vencida por C2");
-    printf("Área: %s\n", (area01 > area02) ? "Batalha Vencida por C1" : "Batalha Vencida por C2");
-    printf("PIB: %s\n", (pib01 > pib02) ? "Batalha Vencida por C1" : "Batalha Vencida por C2");
-    printf("Pontos Turísticos: %s\n", (pontosTuristicos1 > pontosTuristicos2) ? "Batalha Vencida por C1" : "Batalha Vencida por C2");
-    printf("Densidade Populacional: %s\n", (densidade01 > densidade02) ? "Batalha Vencida por C1" : "Batalha Vencida por C2");
-    printf("PIB Per Capita: %s\n", (pibPerCapita01 > pibPerCapita02) ? "Batalha Vencida por C1" : "Batalha Vencida por C2");
+    
+        int pop1 = 10;
+        int pop2 = 20;
+    
+        float area1 = 10.0;
+        float area2 = 20.0;
+    
+        float pib1 = 10.0;
+        float pib2 = 20.0;
 
-    // Determinação da carta vencedora
-    int vitoriasCarta1 = 0, vitoriasCarta2 = 0;
+        int ptsturisticos1 = 10;
+        int ptsturisticos2 = 20;
+    
+        float densidade1 = 10.0;
+        float densidade2 = 20.0;
+    
+        float perCapita1 = 10.0;
+        float perCapita2 = 20.0;
+    
+        float superPoder1 = 10.0;
+        float superPoder2 = 20.0;
+    
 
-    if (populacao01 > populacao02) vitoriasCarta1++; else vitoriasCarta2++;
-    if (area01 > area02) vitoriasCarta1++; else vitoriasCarta2++;
-    if (pib01 > pib02) vitoriasCarta1++; else vitoriasCarta2++;
-    if (pontosTuristicos1 > pontosTuristicos2) vitoriasCarta1++; else vitoriasCarta2++;
-    if (densidade01 > densidade02) vitoriasCarta1++; else vitoriasCarta2++;
-    if (pibPerCapita01 > pibPerCapita02) vitoriasCarta1++; else vitoriasCarta2++;
+        printf("População - a > b: %d\n", pop1 > pop2);
+        printf("População - a < b: %d\n", pop1 < pop2);
+        printf("População - a == b: %d\n", pop1 == pop2);
+        printf("População - a != b: %d\n", pop1 != pop2);
+    
+        printf("Área - a > b: %d\n", area1 > area2);
+        printf("Área - a < b: %d\n", area1 < area2);
+        printf("Área - a == b: %d\n", area1 == area2);
+        printf("Área - a != b: %d\n", area1 != area2);
+    
+        printf("PIB - a > b: %d\n", pib1 > pib2);
+        printf("PIB - a < b: %d\n", pib1 < pib2);
+        printf("PIB - a == b: %d\n", pib1 == pib2);
+        printf("PIB - a != b: %d\n", pib1 != pib2);
 
-    printf("\n______________#####______________\n");
-    if (vitoriasCarta1 > vitoriasCarta2) {
-        printf("🎉 Parabéns, a carta %s (%s) é a ganhadora! 🎉\n", codigo01, cidade01);
-    } else if (vitoriasCarta2 > vitoriasCarta1) {
-        printf("🎉 Parabéns, a carta %s (%s) é a ganhadora! 🎉\n", codigo02, cidade02);
-    } else {
-        printf("⚔️ Empate! Ambas as cartas lutaram com força! ⚔️\n");
+        printf("Pontos Turisticos - a > b: %d\n", ptsturisticos1 > ptsturisticos2);
+        printf("Pontos Turisticos - a < b: %d\n", ptsturisticos1 < ptsturisticos2);
+        printf("Pontos Turisticos - a == b: %d\n", ptsturisticos1 = ptsturisticos2);
+        printf("Pontos Turisticos - a != b: %d\n", ptsturisticos1 != ptsturisticos2);
+    
+        printf("Densidade - a > b: %d\n", densidade1 > densidade2);
+        printf("Densidade - a < b: %d\n", densidade1 < densidade2);
+        printf("Densidade - a == b: %d\n", densidade1 == densidade2);
+        printf("Densidade - a != b: %d\n", densidade1 != densidade2);
+    
+        printf("PIB Per Capita - a > b: %d\n", perCapita1 > perCapita2);
+        printf("PIB Per Capita - a < b: %d\n", perCapita1 < perCapita2);
+        printf("PIB Per Capita - a == b: %d\n", perCapita1 == perCapita2);
+        printf("PIB Per Capita - a != b: %d\n", perCapita1 != perCapita2);
+    
+        printf("Super Poder - a > b: %d\n", superPoder1 > superPoder2);
+        printf("Super Poder - a < b: %d\n", superPoder1 < superPoder2);
+        printf("Super Poder - a == b: %d\n", superPoder1 == superPoder2);
+        printf("Super Poder - a != b: %d\n", superPoder1 != superPoder2);
+    
+        return 0;
     }
-
-    return 0;
-}
-
-
-//obs: retirei os codigos print e scanf para ficar mais funcional, porém deixei os mesmos no nível 2.
