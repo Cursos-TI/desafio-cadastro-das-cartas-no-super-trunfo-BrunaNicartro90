@@ -123,7 +123,17 @@ int main() {
         vitoriasCarta02++;
     }
 
+    // Determinação da carta vencedora final
+    printf("\n______________#####______________\n");
+    printf("Resultado Final:\n");
+
+    if (vitoriasCarta01 > vitoriasCarta02) {
+        printf("🎉 A carta %s (%s) é a grande vencedora com %d vitórias! 🎉\n", codigo01, cidade01, vitoriasCarta01);
+    } else if (vitoriasCarta02 > vitoriasCarta01) {
+        printf("🎉 A carta %s (%s) é a grande vencedora com %d vitórias! 🎉\n", codigo02, cidade02, vitoriasCarta02);
+    } else {
+        printf("⚔️ Empate! Ambas as cartas lutaram com força. ⚔️\n");
+    }
 
     return 0;
 }
-
