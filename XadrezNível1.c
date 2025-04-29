@@ -23,5 +23,5 @@ int main() {
         j++;
      } while (j <= 8);
 
-    return 0;
-}
+     return 0;
+    }
